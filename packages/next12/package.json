@@ -1,5 +1,5 @@
 {
-  "name": "@moonheekim0118/nx-next12-plugin",
+  "name": "@moonee/nx-next12-plugin",
   "version": "1.0.0",
   "description": "Nx plugin for Next.js 12 integration",
   "main": "dist/index.js",
