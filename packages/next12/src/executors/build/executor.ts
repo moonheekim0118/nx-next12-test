@@ -13,7 +13,8 @@ export default async function runExecutor(
   options: NextBuildExecutorOptions,
   context: ExecutorContext
 ) {
-  const projectRoot = context.workspace.projects[context.projectName].root;
+  const projectRoot = context.workspace?.projects[context.projectName as string]
+    .root as string;
   const projectPath = path.join(context.root, projectRoot);
 
   process.env.NODE_ENV = process.env.NODE_ENV || 'production';

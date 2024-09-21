@@ -64,7 +64,7 @@ function getNxEnvironmentVariables() {
   return Object.keys(process.env)
     .filter((env) => /^NX_/i.test(env))
     .reduce((env, key) => {
-      env[key] = process.env[key];
+      env[key] = process.env[key] as string;
       return env;
     }, {} as Record<string, string>);
 }

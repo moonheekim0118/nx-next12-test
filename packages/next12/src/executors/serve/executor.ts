@@ -12,7 +12,8 @@ export default async function runExecutor(
   options: NextServeExecutorOptions,
   context: ExecutorContext
 ) {
-  const projectRoot = context.workspace.projects[context.projectName].root;
+  const projectRoot = context.workspace?.projects[context.projectName as string]
+    .root as string;
   const projectPath = path.join(context.root, projectRoot);
 
   const port = options.port || 3000;
