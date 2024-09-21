@@ -19,7 +19,7 @@ function isNextJsRuleSetRule(rule: unknown): rule is NextJsRuleSetRule {
   return typeof rule === 'object' && rule !== null && 'oneOf' in rule;
 }
 
-export function withNx(nextConfig: NextConfig = {}) {
+export default function withNx(nextConfig: NextConfig = {}) {
   const userWebpack = nextConfig.webpack || ((x) => x);
 
   return {
