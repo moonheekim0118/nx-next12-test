@@ -20,7 +20,7 @@
     "plugin",
     "next12"
   ],
-  "author": "Your Name",
+  "author": "Moonhee kim",
   "license": "MIT",
   "peerDependencies": {
     "@nx/workspace": ">=14.0.0",
