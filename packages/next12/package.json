@@ -1,6 +1,6 @@
 {
-  "name": "@moonheekim/nx-next12-plugin",
-  "version": "0.0.1",
+  "name": "@your-org/nx-next12-plugin",
+  "version": "1.0.0",
   "description": "Nx plugin for Next.js 12 integration",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,21 +23,21 @@
   "author": "Your Name",
   "license": "MIT",
   "peerDependencies": {
-    "@nrwl/workspace": "^14.0.0 || ^15.0.0",
-    "next": "^12.0.0 || ^12.1.0 || ^12.2.0 || ^12.3.0",
-    "react": "^17.0.2 || ^18.0.0",
-    "react-dom": "^17.0.2 || ^18.0.0",
-    "webpack": "^5.0.0"
+    "@nx/workspace": ">=14.0.0",
+    "next": ">=12.0.0 <13.0.0",
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2",
+    "webpack": ">=5.0.0"
   },
   "dependencies": {
-    "@nrwl/devkit": "^14.0.0 || ^15.0.0"
+    "@nx/devkit": ">=14.0.0"
   },
   "devDependencies": {
     "typescript": "~4.8.2",
-    "@types/node": "^14.14.33 || ^16.0.0",
-    "@types/react": "^17.0.3 || ^18.0.0",
-    "@types/react-dom": "^17.0.3 || ^18.0.0",
-    "@types/webpack": "^5.0.0"
+    "@types/node": ">=14.14.33",
+    "@types/react": ">=17.0.3",
+    "@types/react-dom": ">=17.0.3",
+    "@types/webpack": ">=5.0.0"
   },
   "publishConfig": {
     "access": "public"
