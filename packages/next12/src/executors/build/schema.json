@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "type": "object",
+  "properties": {
+    "outputPath": {
+      "type": "string",
+      "description": "The output path of the generated files."
+    },
+    "fileReplacements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "replace": {
+            "type": "string"
+          },
+          "with": {
+            "type": "string"
+          }
+        }
+      },
+      "description": "Replace files with other files in the build output."
+    },
+    "nextConfig": {
+      "type": "string",
+      "description": "Path to Next.js configuration file."
+    }
+  },
+  "required": ["outputPath"]
+}
